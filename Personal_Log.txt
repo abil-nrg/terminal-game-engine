@@ -1,0 +1,26 @@
+My name is Abil, and this will be my project log for the terminal game engine project. My main goal is to be able to create an environment which is able to interact with the terminal
+effectively turning the terminal into a pixelated graphical interface. This all will be written in C, for it BLAZING FAST runtime. 
+
+Dec-8-2022:
+	Found out about a "FULL BLOCK" Unicode character "\u2588" which you are able to print to the terminal, this will be my pixel. To color said pixel I will use the escape char
+	and its colors
+	COLOR		FOREGROUND		BACKGROUND
+	Black		\033[30m		\033[40m
+	Red		\033[31m		\033[41m
+	Green		\033[32m		\033[42m
+	Orange		\033[33m		\033[43m
+	Blue		\033[34m		\033[44m
+	Magenta		\033[35m		\033[45m
+	Cyan		\033[36m		\033[46m
+	Light Gray	\033[37m		\033[47m
+	White		\033[38m		\033[48m
+	Default		\033[39m		\033[49m
+	
+	FULL BLOCK	\u2588	
+
+	a little table for quick access with cat less. My next goal is to have a 2d array which will store each pixel in its entry. Then there will be a function that prints it to the screen.
+	Later I will need to be able to create sprites and assign those sprites with abilities to move and interact with eachother, but thats for later.
+	My max resolution will be 48x190 rowsXcolumns. So that is 9120 max pixels that will be avaliable to me, at least on this laptop. How compeling of graphics you can create
+	with those resolutions we will find out. For tonight I am done, figured out a way to represent pixels, wrote out the basic architecture of the files.
+	Tomorrow, I will need to add a fill_background function and display scrreen function, after that the business of sprites will have to be dealt with.
+	

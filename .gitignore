@@ -1,1 +1,3 @@
 secrets/
+obj_dir/
+*.o
